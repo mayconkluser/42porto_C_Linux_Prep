@@ -1,0 +1,43 @@
+" Ativar numeração de linhas
+set number
+
+" Ativar destaque de sintaxe
+syntax on
+
+" Mostrar linha e coluna atuais
+set ruler
+
+" Habilitar indentação automática
+set autoindent
+set smartindent
+
+" Ativar identação com 4 espaços
+set tabstop=4
+
+" Mostrar correspondência de chaves
+set showmatch
+
+" Linha de status sempre ativa
+set laststatus=2
+
+" Histórico de comandos (200 linhas)
+set history=200
+
+" Barra de navegação para ver longas linhas
+set nowrap
+
+" Pesquisar incrementalmente enquanto você digita
+set incsearch
+
+" Ignorar maiúsculas/minúsculas ao buscar
+set ignorecase
+set smartcase
+" Configurar o mouse (útil para copiar/colar)
+set mouse=a
+
+" Desabilitar som de erroi
+set noerrorbells
+
+" Dividir janelas sempre à direita e embaixo
+set splitbelow
+set splitright
