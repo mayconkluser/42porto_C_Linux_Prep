@@ -8,12 +8,9 @@ void	ft_ft(int *nbr)
 int	main()
 {
 	int	nbr_;
-	int	*nbr_nbr;
 
 	nbr_ = 24;
-	nbr_nbr = &nbr_;
-
-	ft_ft(nbr_nbr);
+	ft_ft(&nbr_);
 	printf("%d", nbr_);
 }
 */
