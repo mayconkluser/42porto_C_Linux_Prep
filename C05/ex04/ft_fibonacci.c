@@ -1,5 +1,7 @@
 int ft_fibonacci(int index)
 {
+	if (index < 0)
+		return (-1);
 	if (index == 0)
 		return (0);
 	if (index == 1)
@@ -27,11 +29,11 @@ int ft_fibonacci(int index)
 		i++;
 	{
 	return (n2);
-}
+*/
 #include <stdio.h>
 #include <stdlib.h>
 int	main(int argc, char **argv)
 {
 	printf("%d", ft_fibonacci(atoi(argv[1])));
 }
-*/
+
