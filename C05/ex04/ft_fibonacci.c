@@ -29,11 +29,11 @@ int ft_fibonacci(int index)
 		i++;
 	{
 	return (n2);
-*/
+
 #include <stdio.h>
 #include <stdlib.h>
 int	main(int argc, char **argv)
 {
 	printf("%d", ft_fibonacci(atoi(argv[1])));
 }
-
+*/
