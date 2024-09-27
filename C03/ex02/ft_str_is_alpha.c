@@ -13,6 +13,7 @@ int ft_str_is_alpha(char *str)
 	return (1);
 }
 
+// Remove this main, it's just for testing.
 int main(int argc, char **argv)
 {
 	if (argc > 1)
