@@ -100,3 +100,6 @@ inoremap /* /* */<Left><Left><Left>
 " Interpolação em shell/perl
 inoremap $($ ()<Left>
 
+" Mapeamento para < e >
+inoremap < <> <Left>
+
