@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int ft_str_is_uppercase(char *str)
 {
 	int i;
@@ -14,10 +13,11 @@ int ft_str_is_uppercase(char *str)
 	return (1);
 }
 
-// Remove this function, it's just for testing.
+/*
 int main(int argc, char **argv)
 {
 	if (argc > 1)
 		printf("%d", ft_str_is_uppercase(argv[1]));
 	return (0);
 }
+ */
