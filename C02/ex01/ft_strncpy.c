@@ -3,8 +3,8 @@
 
 char *ft_strncpy(char *dest, char *str, unsigned int n)
 {
-	int i = 0;
-	while (str[i] != '\0' && n != i)
+	unsigned int i = 0;
+	while (str[i] != '\0' && i != n)
 	{
 		dest[i] = str[i];
 		i++;
