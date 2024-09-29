@@ -12,10 +12,11 @@ int ft_str_is_lowercase(char *str)
 	return (1);
 }
 
-// Remove this function, it's just for testing.
+/*
 int main(int argc, char **argv)
 {
 	if (argc > 1)
 		printf("%d", ft_str_is_lowercase(argv[1]));
 	return (0);
 }
+ */
