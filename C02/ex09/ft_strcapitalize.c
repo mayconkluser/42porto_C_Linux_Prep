@@ -1,5 +1,12 @@
 #include <stdio.h> 
 
+int ft_is_alphanumeric(char *str, int i)
+{
+	return ((str[i] >= '0' && str[i] <= '9') 
+				|| (str[i] >= 'a' && str[i] <= 'z')
+				|| (str[i] >= 'A' && str[i] <= 'Z'));
+}
+
 char *ft_strcapitalize(char *str)
 {
 	int i;
@@ -9,17 +16,13 @@ char *ft_strcapitalize(char *str)
 	new_word = 1;
 	while (str[i] != '\0')
 	{
-		if ((str[i] >= '0' && str[i] <= '9') 
-			|| (str[i] >= 'a' && str[i] <= 'z')
-			|| (str[i] >= 'A' && str[i] <= 'Z'))
+		if (ft_is_alphanumeric(str, i))
 		{
 			if (new_word && (str[i] >= 'a' && str[i] <= 'z'))
-			{
 				str[i] -= 32;
-				new_word = 0;
-			}
-			else if (str[i] >= 'A' && str[i] <= 'Z')
+			else if (!new_word && str[i] >= 'A' && str[i] <= 'Z')
 				str[i] += 32;
+			new_word = 0;
 		}
 		else
 			new_word = 1;
@@ -35,4 +38,4 @@ int main(int argc, char **argv)
 		printf("%s", ft_strcapitalize(argv[1]));
 	return (0);
 }
- */
+*/
