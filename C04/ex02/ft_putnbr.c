@@ -27,7 +27,6 @@ void	ft_putchar(char c)
 
 void	ft_putnbr(int nb)
 {
-	int	result;
 	long nbl;
 
 	nbl = nb;
