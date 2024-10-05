@@ -1,7 +1,7 @@
 
 # Iterative Factorial in C
 
-This repository contains a simple C function that computes the factorial of a given integer using an iterative approach.
+This repository contains a C function that computes the factorial of a given integer using an iterative approach. The function has been updated to use `long` variables to handle larger numbers and prevent overflow for relatively larger values of `nb`.
 
 ## Function Overview
 
@@ -10,7 +10,7 @@ The function `ft_iterative_factorial` calculates the factorial of a number by mu
 ### Function Prototype
 
 ```c
-int ft_iterative_factorial(int nb);
+long ft_iterative_factorial(int nb);
 ```
 
 ### Parameters
@@ -19,25 +19,28 @@ int ft_iterative_factorial(int nb);
 
 ### Return Value
 
-- The function returns the factorial of the given integer `nb`.
+- The function returns the factorial of the given integer `nb` as a `long`.
 - If `nb` is 0 or 1, the function returns `1` (since 0! = 1! = 1).
-- If `nb` is negative, the function returns `1` by default, though the factorial for negative numbers is not defined.
+- If `nb` is negative, the function returns `0` to indicate that factorial is not defined for negative numbers.
 
-## Explanation of the Algorithm
+## Code Explanation
 
 1. **Initialization**: 
-   - The variables `i` (the loop counter) and `n` (the result of the factorial) are initialized to 1.
+   - Two variables, `i` (loop counter) and `n` (factorial result), are initialized to `1`. They are declared as `long` to handle larger values.
    
-2. **Looping**: 
-   - The function uses a `while` loop that continues as long as `i` is less than or equal to `nb`. 
+2. **Negative Check**:
+   - If the input `nb` is less than 0, the function immediately returns `0`, as factorials are not defined for negative numbers.
+   
+3. **Looping**: 
+   - A `while` loop runs as long as `i` is less than or equal to `nb`. 
    - In each iteration, `n` is multiplied by `i`, and `i` is incremented by 1.
-
-3. **Final Result**: 
-   - After the loop, the variable `n` contains the factorial of `nb` and is returned as the result.
+   
+4. **Final Result**: 
+   - After the loop, `n` holds the factorial of `nb` and is returned as the result.
 
 ## Example of Execution
 
-For `nb = 5`, the function calculates:
+For `nb = 5`, the function will compute:
 
 \[
 n = 1 	imes 2 	imes 3 	imes 4 	imes 5 = 120
@@ -47,30 +50,30 @@ Thus, `ft_iterative_factorial(5)` returns `120`.
 
 ## Edge Cases
 
-- If `nb` is 0 or 1, the function will immediately return 1, as per the definition of factorial.
-- The behavior for negative inputs is undefined, but the function returns 1 in this case.
+- If `nb` is 0 or 1, the function returns `1`.
+- The behavior for negative inputs is handled by returning `0`.
 
-## Sample Code
-
-Here is the full code of the function:
+## Full Code
 
 ```c
-int ft_iterative_factorial(int nb)
+long	ft_iterative_factorial(int nb)
 {
-    int i;
-    int n;
+	long	i;
+	long	n;
 
-    i = 1;
-    n = 1;
-    while (i <= nb)
-    {
-        n = n * i;
-        i++;
-    }
-    return (n);
+	if (nb < 0)
+		return (0);
+	i = 1;
+	n = 1;
+	while (i <= nb)
+	{
+		n = n * i;
+		i++;
+	}
+	return (n);
 }
 ```
 
 ## Conclusion
 
-This function efficiently computes the factorial of a non-negative integer using an iterative approach, avoiding the risks of recursion and potential stack overflow for large values of `nb`.
+This function efficiently computes the factorial of a non-negative integer using an iterative approach. The update to `long` helps prevent overflow when calculating larger factorials.
