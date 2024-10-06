@@ -10,7 +10,7 @@ The function `ft_iterative_factorial` calculates the factorial of a number by us
 ### Function Prototype
 
 ```c
-long ft_iterative_factorial(int nb);
+int ft_iterative_factorial(int nb);
 ```
 
 ### Parameters
