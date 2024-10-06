@@ -3,10 +3,11 @@
 
 int	ft_iterative_power(int nb, int power)
 {
-	long	result;
-	if (power < 0 || nb < 0)
+	int	result;
+
+	if (power < 0)
 		return (0);
-	else if (power == 0 || nb == 0)
+	else if (power == 0)
 		return (1);
 	result = 1;
 	while (power > 0)
