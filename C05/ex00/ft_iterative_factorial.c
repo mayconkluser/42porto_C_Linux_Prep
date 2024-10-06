@@ -3,19 +3,19 @@
 
 int	ft_iterative_factorial(int nb)
 {
-	long	i;
-	long	n;
+	long	result;
 
 	if (nb < 0)
 		return (0);
-	i = 1;
-	n = 1;
-	while (i <= nb)
+	else if (nb == 0 || nb == 1)
+		return (1);
+	result = 1;
+	while (nb > 0)
 	{
-		n = n * i;
-		i++;
+		result *= nb;
+		nb--;
 	}
-	return (n);
+	return (result);
 }
 
 /*
