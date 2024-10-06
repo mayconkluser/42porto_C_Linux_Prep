@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+
 int ft_sqrt(int nb)
 {
     int i;
@@ -16,8 +19,6 @@ int ft_sqrt(int nb)
 }
 
 /*
-#include <stdio.h>
-#include <stdlib.h>
 int	main(int argc, char **argv)
 {
 	if (argc > 1)
