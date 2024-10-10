@@ -1,5 +1,5 @@
 
-# Square Root Function in C
+# Exercise 05 : ft_sqrt
 
 This repository contains a C function that calculates the square root of a given number using an iterative approach.
 
