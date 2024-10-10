@@ -1,5 +1,5 @@
 
-# putstr Function Example in C
+# Exercise 00 : ft_print_program_name
 
 This README provides an explanation for the `putstr` function and its role within a simple C program that checks argument count and prints messages accordingly.
 
