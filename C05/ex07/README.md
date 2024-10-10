@@ -1,5 +1,5 @@
 
-# Prime Number and Next Prime Finder in C
+# Exercise 07 : ft_find_next_prime
 
 This repository contains two C functions that work together to determine if a number is prime and to find the next prime number that is greater than or equal to a given integer.
 
