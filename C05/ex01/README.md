@@ -1,5 +1,5 @@
 
-# Exercise 01: ft_recursive_factorial
+# Exercise 01 : ft_recursive_factorial
 
 This repository contains a C function that computes the factorial of a given integer using a recursive approach.
 
