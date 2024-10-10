@@ -1,5 +1,5 @@
 
-# Iterative Power Function in C
+# Exercise 02 : ft_iterative_power
 
 This repository contains a C function that calculates the result of a number raised to a given power using an iterative approach.
 
