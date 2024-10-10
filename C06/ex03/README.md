@@ -1,5 +1,5 @@
 
-# Sort Parans
+# Exercise 03 : ft_sort_params
 
 This README provides an explanation of three string manipulation functions in C (`ft_putstr`, `ft_strcmp`, and `ft_sort_parans`) and their usage in sorting command-line arguments.
 
