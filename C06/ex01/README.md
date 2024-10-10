@@ -1,5 +1,5 @@
 
-# putstr Function Example in C
+# Exercise 01 : ft_print_params
 
 This README provides an explanation of the `putstr` function and its application within a C program that outputs each argument on a new line if additional arguments are provided.
 
