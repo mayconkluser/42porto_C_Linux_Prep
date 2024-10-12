@@ -1,5 +1,5 @@
 
-# ft_putchar Function in C
+# Exercise 00: ft_putchar
 
 This README provides an explanation of the `ft_putchar` function in C, which is designed to output a single character to the standard output using the `write` system call.
 
