@@ -1,5 +1,5 @@
 
-# Prime Number Checker in C
+# Exercise 06 : ft_is_prime
 
 This repository contains a C function that checks if a given integer `nb` is a prime number using an efficient iterative approach.
 

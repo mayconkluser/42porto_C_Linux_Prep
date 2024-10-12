@@ -1,5 +1,5 @@
 
-# putstr Function Example in C
+# Exercise 02 : ft_rev_params
 
 This README provides an explanation of the `putstr` function and its application within a C program that outputs each argument in reverse order on a new line if additional arguments are provided.
 

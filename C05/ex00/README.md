@@ -1,5 +1,5 @@
 
-# Iterative Factorial in C
+# Exercise 00 : ft_iterative_factorial
 
 This repository contains a C function that computes the factorial of a given integer using an iterative approach.
 

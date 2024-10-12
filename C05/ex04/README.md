@@ -1,5 +1,5 @@
 
-# Fibonacci Sequence in C
+# Exercise 04 : ft_fibonacci
 
 This repository contains a C function that computes the Fibonacci sequence for a given index using recursion.
 

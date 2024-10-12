@@ -1,5 +1,5 @@
 
-# Ten Queens Puzzle Solution in C
+# Exercise 08 : As dez damas
 
 This repository contains functions to solve the Ten Queens Puzzle using recursion and backtracking. The puzzle involves placing ten queens on a 10x10 chessboard in such a way that no two queens threaten each other.
 

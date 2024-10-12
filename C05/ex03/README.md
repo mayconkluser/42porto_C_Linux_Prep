@@ -1,5 +1,5 @@
 
-# Recursive Power Function in C
+# Exercise 03 : ft_recursive_power
 
 This repository contains a C function that calculates the result of a number raised to a given power using recursion.
 
