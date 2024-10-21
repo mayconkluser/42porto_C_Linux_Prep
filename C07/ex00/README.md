@@ -60,19 +60,6 @@ char *ft_strdup(char *src)
     return (dup);
 }
 
-int main()
-{
-    char *original = "Hello, world!";
-    char *copy = ft_strdup(original);
-    
-    if (copy != NULL)
-    {
-        // Use the duplicated string `copy`
-        free(copy); // Remember to free the allocated memory
-    }
-    
-    return 0;
-}
 ```
 
 ## Conclusion
