@@ -60,6 +60,35 @@ int *ft_range(int min, int max)
     return (array);
 }
 
+int	main(int argc, char **argv)
+{
+	if (argc != 3)
+	{
+		printf("Use: %s <min> <max>\n", argv[0]);
+		return (1);
+	}
+
+	int	min = atoi(argv[1]);
+	int	max = atoi(argv[2]);
+	int	*range = ft_range(min, max);
+	if (!range)
+	{
+		printf("Error: min must be less than max.\n");
+		return (1);
+	}
+	
+	int	size = max - min;
+	int	i = 0;
+	printf("Array of integers: ");
+	while (i < size)
+	{
+		printf("%d ", range[i]);
+		i++;
+	}
+	free(range);
+	return (0);
+}
+
 ```
 
 ## Conclusion
